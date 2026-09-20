@@ -89,6 +89,15 @@ export default function Home() {
               <div style={{ fontSize: 18, fontWeight: 900, marginBottom: 4 }}>Weekly Pulse — INDMoney | Week 38</div>
               <div style={{ fontSize: 12, color: '#64748b', fontFamily: 'JetBrains Mono', marginBottom: 16 }}>2026-08-05 → 2026-09-18 • Health: 2.88★ avg • 48 reviews</div>
 
+              {/* Read via CSV/Excel/Image/PDF */}
+              <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 14, padding: 10, background: '#f8fafc', borderRadius: 10, border: '1px solid #e2e8f0', alignItems: 'center' }}>
+                <span style={{ fontSize: 11, fontWeight: 800, color: '#475569' }}>READ VIA:</span>
+                <a href="/reviews.csv" download style={{ background: 'white', border: '1px solid #e2e8f0', padding: '6px 10px', borderRadius: 20, textDecoration: 'none', color: '#0f172a', fontSize: 12, fontWeight: 700, cursor: 'pointer' }}>📊 CSV</a>
+                <a href="/reviews.xlsx" download style={{ background: 'white', border: '1px solid #e2e8f0', padding: '6px 10px', borderRadius: 20, textDecoration: 'none', color: '#0f172a', fontSize: 12, fontWeight: 700, cursor: 'pointer' }}>📗 Excel</a>
+                <a href="/weekly_note.png" target="_blank" style={{ background: 'white', border: '1px solid #e2e8f0', padding: '6px 10px', borderRadius: 20, textDecoration: 'none', color: '#0f172a', fontSize: 12, fontWeight: 700, cursor: 'pointer' }}>🖼️ Image</a>
+                <a href="/weekly_note.pdf" target="_blank" style={{ background: '#0f172a', color: 'white', padding: '6px 12px', borderRadius: 20, textDecoration: 'none', fontSize: 12, fontWeight: 700, cursor: 'pointer' }}>📄 PDF</a>
+                <span style={{ fontSize: 11, color: '#94a3b8', marginLeft: 'auto' }}>click to view/download</span>
+              </div>
               <div style={{ fontSize: 12, fontWeight: 800, color: '#0f172a', letterSpacing: '0.06em', marginBottom: 10 }}>TOP 3 THEMES (OF 5)</div>
               {[
                 {n:1, t:'Payments & Transfers', c:13, neg:46, avg:'3.0', desc:'UPI failures & double-debits still top pain; successes up after recent fix', col:'#ef4444', id:'PaymentsTransfers'},
