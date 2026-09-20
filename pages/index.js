@@ -19,7 +19,7 @@ export default function Home() {
           </div>
           <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
             <span style={{ fontSize: 12, color: '#64748b', fontFamily: 'JetBrains Mono' }}>Week 38 • 2026-08-05 → 2026-09-18</span>
-            <a href="https://github.com/niteshpradhan1/Weekly-Pulse-for-IND-Money" target="_blank" style={{ background: '#0f172a', color: 'white', padding: '8px 14px', borderRadius: 8, textDecoration: 'none', fontSize: 13, fontWeight: 600 }}>GitHub →</a>
+            <span style={{ background: '#f1f5f9', color: '#475569', padding: '8px 14px', borderRadius: 8, fontSize: 12, fontWeight: 600, border: '1px solid #e2e8f0' }}>No PII • Public reviews only</span>
           </div>
         </div>
       </nav>
@@ -35,7 +35,7 @@ export default function Home() {
             <p style={{ color: '#cbd5e1', fontSize: 14, lineHeight: 1.6, margin: 0, maxWidth: 540 }}>48 App Store + Play Store reviews (12w) turned into Top 3 Themes + 3 Real Quotes + 3 Action Ideas. Scannable in 30 sec for Product, Growth, Support & Leadership.</p>
             <div style={{ display: 'flex', gap: 10, marginTop: 16, flexWrap: 'wrap' }}>
               <a href="/weekly_note_latest.md" download style={{ background: 'white', color: '#0f172a', padding: '10px 16px', borderRadius: 10, textDecoration: 'none', fontSize: 13, fontWeight: 700 }}>📄 Download One-Pager (MD)</a>
-              <a href="https://github.com/niteshpradhan1/Weekly-Pulse-for-IND-Money/blob/main/output/weekly_note_latest.md" target="_blank" style={{ background: 'rgba(255,255,255,0.12)', color: 'white', padding: '10px 16px', borderRadius: 10, textDecoration: 'none', fontSize: 13, fontWeight: 600, border: '1px solid rgba(255,255,255,0.2)' }}>View Raw MD</a>
+              <a href="/weekly_note.pdf" target="_blank" style={{ background: 'rgba(255,255,255,0.12)', color: 'white', padding: '10px 16px', borderRadius: 10, textDecoration: 'none', fontSize: 13, fontWeight: 600, border: '1px solid rgba(255,255,255,0.2)' }}>📄 View PDF</a>
             </div>
           </div>
           <div style={{ flex: '0 0 340px', background: 'white', borderRadius: 16, padding: 18, color: '#0f172a' }}>
@@ -160,7 +160,7 @@ export default function Home() {
                 <div><b>Email:</b> <code style={{ background: '#f1f5f9', padding: '2px 6px', borderRadius: 6, fontSize: 11 }}>output/demo_email_combined.eml</code></div>
               </div>
               <div style={{ background: '#0f172a', color: '#e2e8f0', padding: 12, borderRadius: 10, fontSize: 11, fontFamily: 'JetBrains Mono', marginTop: 12, lineHeight: 1.6 }}>
-                python3 src/pulse.py --weeks {weeks} --to niteshpradhan900@gmail.com<br/>python3 src/send_email.py --to niteshpradhan900@gmail.com --smtp
+                python3 src/pulse.py --weeks {weeks} --to yourself@example.com<br/>python3 src/send_email.py --to yourself@example.com --smtp
               </div>
             </div>
 
@@ -177,7 +177,7 @@ export default function Home() {
               </div>
               <div style={{ display: 'flex', gap: 8, marginTop: 12 }}>
                 <a href="/weekly_note_latest.md" download style={{ flex: 1, background: '#0f172a', color: 'white', textAlign: 'center', padding: '8px', borderRadius: 8, textDecoration: 'none', fontSize: 12, fontWeight: 700 }}>Download MD</a>
-                <a href="https://github.com/niteshpradhan1/Weekly-Pulse-for-IND-Money" target="_blank" style={{ flex: 1, background: 'white', border: '1px solid #e2e8f0', textAlign: 'center', padding: '8px', borderRadius: 8, textDecoration: 'none', color: '#0f172a', fontSize: 12, fontWeight: 700 }}>GitHub</a>
+                <a href="/weekly_note.pdf" target="_blank" style={{ flex: 1, background: 'white', border: '1px solid #e2e8f0', textAlign: 'center', padding: '8px', borderRadius: 8, textDecoration: 'none', color: '#0f172a', fontSize: 12, fontWeight: 700 }}>Download PDF</a>
               </div>
             </div>
 
