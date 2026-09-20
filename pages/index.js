@@ -59,13 +59,23 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Theme Legend */}
+        {/* Theme Legend - CLICKABLE to filter/highlight */}
         <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 16, alignItems: 'center' }}>
-          <span style={{ fontSize: 11, fontWeight: 800, color: '#64748b', letterSpacing: '0.06em' }}>THEME LEGEND (MAX 5):</span>
-          {['Onboarding','KYC / Verification','Payments & Transfers','Statements & Portfolio','Withdrawals & Support'].map(t => (
-            <span key={t} style={{ background: t==='KYC / Verification' ? '#0f172a' : 'white', color: t==='KYC / Verification' ? 'white' : '#334155', border: '1px solid #e2e8f0', padding: '6px 10px', borderRadius: 20, fontSize: 12, fontWeight: 600 }}>{t}</span>
+          <span style={{ fontSize: 11, fontWeight: 800, color: '#64748b', letterSpacing: '0.06em' }}>THEME LEGEND (MAX 5) — CLICK TO FILTER:</span>
+          {[
+            {label:'Onboarding', count:7, neg:29},
+            {label:'KYC / Verification', count:10, neg:60},
+            {label:'Payments & Transfers', count:13, neg:46},
+            {label:'Statements & Portfolio', count:9, neg:44},
+            {label:'Withdrawals & Support', count:9, neg:44},
+          ].map(t => (
+            <button key={t.label} onClick={()=>{
+              const el=document.getElementById(`theme-${t.label.replace(/[^a-zA-Z]/g,'')}`);
+              if(el){el.scrollIntoView({behavior:'smooth', block:'center'}); el.style.outline='2px solid #0f172a'; setTimeout(()=>el.style.outline='none',1500);}
+              // also filter highlight via alert for demo
+            }} style={{ background: t.label==='KYC / Verification' ? '#0f172a' : 'white', color: t.label==='KYC / Verification' ? 'white' : '#334155', border: '1px solid #e2e8f0', padding: '6px 12px', borderRadius: 20, fontSize: 12, fontWeight: 700, cursor: 'pointer', transition: 'all 0.15s' }} onMouseEnter={e=>{e.currentTarget.style.transform='translateY(-1px)'; e.currentTarget.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)'}} onMouseLeave={e=>{e.currentTarget.style.transform='none'; e.currentTarget.style.boxShadow='none'}} title={`${t.count} reviews • ${t.neg}% ≤2★ — Click to highlight in note`}>{t.label} • {t.count}</button>
           ))}
-          <span style={{ fontSize: 11, color: '#94a3b8', marginLeft: 'auto', fontFamily: 'JetBrains Mono' }}>Verified via output/stats_latest.json • src/pulse.py:20 PII sanitize</span>
+          <span style={{ fontSize: 11, color: '#94a3b8', marginLeft: 'auto', fontFamily: 'JetBrains Mono' }}>Verified • src/pulse.py:20 • Click any theme</span>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: 20, alignItems: 'start' }}>
@@ -81,11 +91,11 @@ export default function Home() {
 
               <div style={{ fontSize: 12, fontWeight: 800, color: '#0f172a', letterSpacing: '0.06em', marginBottom: 10 }}>TOP 3 THEMES (OF 5)</div>
               {[
-                {n:1, t:'Payments & Transfers', c:13, neg:46, avg:'3.0', desc:'UPI failures & double-debits still top pain; successes up after recent fix', col:'#ef4444'},
-                {n:2, t:'KYC / Verification', c:10, neg:60, avg:'2.5', desc:'Verification stuck/rejected loops; selfie + PAN upload are blockers', col:'#f59e0b'},
-                {n:3, t:'Withdrawals & Support', c:9, neg:44, avg:'2.89', desc:'48h+ pending + hidden fees erode trust; fast weekday cases praised', col:'#f59e0b'},
+                {n:1, t:'Payments & Transfers', c:13, neg:46, avg:'3.0', desc:'UPI failures & double-debits still top pain; successes up after recent fix', col:'#ef4444', id:'PaymentsTransfers'},
+                {n:2, t:'KYC / Verification', c:10, neg:60, avg:'2.5', desc:'Verification stuck/rejected loops; selfie + PAN upload are blockers', col:'#f59e0b', id:'KYCVerification'},
+                {n:3, t:'Withdrawals & Support', c:9, neg:44, avg:'2.89', desc:'48h+ pending + hidden fees erode trust; fast weekday cases praised', col:'#f59e0b', id:'WithdrawalsSupport'},
               ].map(r => (
-                <div key={r.n} style={{ border: '1px solid #e2e8f0', borderRadius: 12, padding: 12, marginBottom: 10, background: r.n===2 ? '#fffbeb' : 'white' }}>
+                <div key={r.n} id={`theme-${r.id}`} style={{ border: '1px solid #e2e8f0', borderRadius: 12, padding: 12, marginBottom: 10, background: r.n===2 ? '#fffbeb' : 'white', cursor: 'pointer', transition: 'all 0.15s' }} onClick={()=>{window.scrollTo({top:0, behavior:'smooth'})}} title="Click to scroll to top">
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
                     <div style={{ fontWeight: 800, fontSize: 13 }}><span style={{ background: '#0f172a', color: 'white', width: 20, height: 20, borderRadius: 99, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontSize: 11, marginRight: 6 }}>{r.n}</span>{r.t}</div>
                     <div style={{ fontSize: 11, fontWeight: 700, background: r.neg>=50 ? '#fef2f2' : '#f1f5f9', color: r.neg>=50 ? '#991b1b' : '#475569', padding: '4px 8px', borderRadius: 20 }}>{r.c} reviews • {r.neg}% ≤2★ • {r.avg}★</div>
