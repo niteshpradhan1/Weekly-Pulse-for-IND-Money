@@ -52,20 +52,20 @@ export default function Home() {
     <div style={{ fontFamily: 'Inter, -apple-system, sans-serif', background: '#F8FAFC', minHeight: '100vh', color: '#0A1931' }}>
       <style>{`@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&family=JetBrains+Mono:wght@500&display=swap'); *{scroll-behavior:smooth}`}</style>
 
-      {/* INDMoney Original Theme Nav */}
-      <nav style={{ background: 'white', borderBottom: `3px solid ${IND.gold}`, position: 'sticky', top: 0, zIndex: 20, boxShadow: '0 4px 20px rgba(10,25,49,0.08)' }}>
-        <div style={{ maxWidth: 1120, margin: '0 auto', padding: '12px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-            <div style={{ width: 42, height: 42, background: `linear-gradient(135deg, ${IND.navy} 0%, ${IND.navy2} 100%)`, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', color: IND.gold, fontWeight: 900, fontSize: 18, border: `2px solid ${IND.gold}` }}>₹</div>
-            <div>
-              <div style={{ fontWeight: 900, fontSize: 16, letterSpacing: '-0.02em' }}>INDMoney <span style={{ fontWeight: 600, color: '#64748b' }}>•</span> <span style={{ color: IND.teal }}>Weekly Pulse</span></div>
-              <div style={{ fontSize: 11, color: '#64748b', fontWeight: 700, letterSpacing: '0.06em' }}>LIP CHALLENGE • SAME PRODUCT AS LIP 4 • NO PII</div>
+      {/* INDMoney Original Header - from www.indmoney.com */}
+      <nav style={{ background: 'white', borderBottom: '1px solid #e5e7eb', position: 'sticky', top: 0, zIndex: 20 }}>
+        <div style={{ maxWidth: 1120, margin: '0 auto', padding: '10px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 18 }}>
+            <img src="https://ast.indmoneycdn.com/cdn/images/fe/ind-money-logo.svg" alt="INDmoney Logo" style={{ height: 38, width: 'auto' }} />
+            <div style={{ display: 'flex', gap: 14, fontSize: 13, fontWeight: 600, color: '#334155' }}>
+              <span style={{ color: IND.navy, borderBottom: `2px solid ${IND.navy}`, paddingBottom: 4 }}>Weekly Pulse</span>
+              <span>Features</span><span>Pricing</span>
             </div>
-            <span style={{ background: IND.gold, color: IND.navy, fontSize: 11, fontWeight: 800, padding: '5px 10px', borderRadius: 20, marginLeft: 6 }}>NEW: KYC autofetch via phone</span>
+            <span style={{ background: IND.gold, color: IND.navy, fontSize: 11, fontWeight: 800, padding: '4px 10px', borderRadius: 20, marginLeft: 6, border: '1px solid #fde68a' }}>NEW: KYC autofetch</span>
           </div>
-          <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
-            <span style={{ fontSize: 12, color: '#64748b', fontFamily: 'JetBrains Mono', display: 'none' }}>Week 38 • 2026-08-05 → 2026-09-18</span>
-            <span style={{ background: '#F0FDF4', color: '#166534', border: '1px solid #BBF7D0', padding: '6px 12px', borderRadius: 20, fontSize: 12, fontWeight: 700 }}>● Live on Vercel</span>
+          <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
+            <span style={{ fontSize: 11, color: '#64748b', fontWeight: 700, letterSpacing: '0.04em', background: '#f8fafc', padding: '6px 10px', borderRadius: 20, border: '1px solid #e2e8f0' }}>4.7★ iOS • 4.6★ Android • 2Cr+ Downloads</span>
+            <a href="#import" style={{ background: IND.navy, color: 'white', padding: '9px 16px', borderRadius: 8, textDecoration: 'none', fontSize: 13, fontWeight: 700 }}>Open Pulse</a>
           </div>
         </div>
       </nav>
