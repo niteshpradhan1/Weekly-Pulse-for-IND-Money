@@ -1,0 +1,10 @@
+# Ignore Python Streamlit backend for Vercel Next.js deploy
+src/app.py
+src/pulse.py
+src/send_email.py
+prompts/
+data/
+output/
+requirements.txt
+.streamlit/
+__pycache__/
