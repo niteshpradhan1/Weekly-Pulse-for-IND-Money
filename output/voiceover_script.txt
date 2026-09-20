@@ -1,0 +1,21 @@
+FINAL DEMO VOICEOVER SCRIPT — INDMoney Weekly Pulse (60s, ≤3min)
+============================================================
+
+Slide 1: Final Demo — INDMoney Weekly Pulse (60s) (Vercel Live  •  Same as LIP 4  •  Original logo from indmoney.com)
+  🎙 Voiceover: 'This is the INDMoney Weekly Pulse — turning 48 App Store and Play Store reviews into a one-page action note in 30 seconds.'
+
+Slide 2: 1. Import — Public Reviews Only (0:10) (8–12 weeks  •  CSV: rating, title, text, date, store)
+  🎙 'We import only public exports — no scraping behind logins.'
+
+Slide 3: 2. Group — 5 Themes Max (0:20) (INDMoney Taxonomy  •  Clickable Legend)
+  🎙 'Reviews auto-group into 5 INDMoney themes — same filing as config.json.'
+
+Slide 4: 3. Generate — One-Page Note 232w (0:30) (Scannable  •  Top 3 + 3 Quotes + 3 Actions)
+  🎙 'The note is scannable in 30 seconds — 232 words, well under 250.'
+
+Slide 5: 4. Read via 4 Formats + Draft Email (0:40) (CSV • Excel • Image • PDF  •  Demo Email)
+  🎙 'Read the pulse however you need — CSV, Excel, Image, or PDF — plus draft email.'
+
+Slide 6: 5. Live on Vercel + How to Re-run (0:50) (Original INDMoney logo  •  Auto-deploy on git push)
+  🎙 'Live on Vercel at weekly-pulse-for-ind-money.vercel.app — deployed from GitHub.'
+
