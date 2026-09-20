@@ -1,0 +1,49 @@
+rating,title,text,date,store
+5,Super smooth UPI now,"UPI payments are instant now. Earlier it was lagging but last update fixed it.",2026-09-18,Play Store
+2,KYC stuck for days,"KYC verification stuck at PAN check for 3 days. Tried reinstalling.",2026-09-17,App Store
+1,Withdrawal not received,"Withdrawal requested 48 hours ago still not credited. Support not replying.",2026-09-16,Play Store
+4,Love the new statement view,"Monthly statement download is clean and easy to share. Well done.",2026-09-15,App Store
+3,Onboarding was confusing,"Onboarding asks for same info twice. Took 15 minutes to create account.",2026-09-15,Play Store
+5,Instant payment success,"Payments to any UPI ID work in seconds. No failures this month.",2026-09-14,App Store
+2,Statement total mismatch,"Statement total doesn't match portfolio value. Confusing numbers.",2026-09-14,Play Store
+1,KYC rejected again,"KYC rejected saying address mismatch but my Aadhaar is correct.",2026-09-13,App Store
+5,Great support for withdrawal,"Withdrawal was processed in under 2 hours. Great support chat.",2026-09-12,Play Store
+4,Easy onboarding overall,"Onboarding was quick with Aadhaar auto-fill. Under 5 mins.",2026-09-11,App Store
+2,UPI failed but money debited,"UPI payment failed but amount debited. No refund after 24 hours.",2026-09-11,Play Store
+3,KYC selfie issue,"KYC selfie keeps failing in low light. Need better guidance.",2026-09-10,App Store
+1,App crashes on payment,"App crashes every time I try to pay rent via UPI. Can't complete payment.",2026-09-09,Play Store
+4,Portfolio statement helpful,"Portfolio statement with XIRR is very helpful for tracking.",2026-09-08,App Store
+2,Withdrawal charges hidden,"No clarity on withdrawal charges until final step. Feels hidden.",2026-09-07,Play Store
+3,Onboarding OTP delay,"Onboarding OTP took 5 minutes to arrive. Almost gave up.",2026-09-06,App Store
+5,Payments never fail,"No payment failures in last month. Very reliable now.",2026-09-05,Play Store
+1,KYC document upload bug,"KYC document upload button not working on Android 14.",2026-09-04,Play Store
+4,Withdrawal quick but fee high,"Withdrawal fast but charges shown late. Improve fee transparency.",2026-09-03,App Store
+2,Statement PDF blurry,"Downloaded statement PDF is blurry and not printable.",2026-09-02,App Store
+5,Amazing onboarding flow,"Onboarding completed in 3 minutes with video KYC. Seamless!",2026-09-01,Play Store
+3,Payment pending status unclear,"Payment shows pending for long time no status update.",2026-08-31,App Store
+2,KYC support slow,"KYC failed and support took 4 days to respond.",2026-08-30,Play Store
+4,Statements improved,"New statement design is much clearer than before.",2026-08-29,App Store
+1,Payment double debited,"Payment debited twice for single transaction. No quick help.",2026-08-28,Play Store
+3,Onboarding language issue,"Onboarding only in English needs Hindi option.",2026-08-27,App Store
+2,Withdrawal delay weekend,"Withdrawal initiated Friday still pending Monday morning.",2026-08-26,Play Store
+5,Zero payment issues,"All my UPI autopays work perfectly now.",2026-08-25,App Store
+1,KYC loop,"Stuck in KYC loop asking for same docs repeatedly.",2026-08-24,Play Store
+4,Statement email fast,"Statement emailed within seconds on request.",2026-08-23,App Store
+3,UPI limit confusing,"UPI daily limit not shown before payment fails.",2026-08-22,Play Store
+2,Withdrawal to wrong account,"Withdrawal option doesn't confirm account number before sending.",2026-08-21,App Store
+5,Onboarding delightful,"Loved the onboarding checklist shows progress clearly.",2026-08-20,Play Store
+1,Payment to merchant failed,"Merchant payment failed at store very embarrassing.",2026-08-19,App Store
+3,KYC address proof confusion,"Not clear which address proof is accepted for KYC.",2026-08-18,Play Store
+4,Quick withdrawal,"Withdrawal within hours on weekday good.",2026-08-17,App Store
+2,Statement missing transactions,"Last week transactions missing from statement.",2026-08-16,Play Store
+1,Onboarding crash,"App crashed during onboarding after photo upload.",2026-08-15,App Store
+5,Payments are fastest,"Fastest UPI app I have used period.",2026-08-14,Play Store
+2,KYC video call wait,"Video KYC wait time 25 minutes too long.",2026-08-13,App Store
+3,Withdrawal limit low,"Withdrawal daily limit too low for my needs.",2026-08-12,Play Store
+1,UPI not working,"UPI payments not working since last update worst.",2026-08-11,Play Store
+4,Statement download easy,"One tap statement download works great.",2026-08-10,App Store
+2,Payment refund slow,"Refund for failed payment took 6 days.",2026-08-09,Play Store
+5,KYC done in minutes,"KYC approved in 10 minutes amazing.",2026-08-08,App Store
+3,Support bot not helpful,"Support bot gives generic answers for withdrawal issues.",2026-08-07,Play Store
+2,Onboarding asks too many permissions,"Onboarding asks for contacts and location unnecessary.",2026-08-06,Play Store
+1,Statement not useful,"Statement lacks category wise breakdown.",2026-08-05,App Store

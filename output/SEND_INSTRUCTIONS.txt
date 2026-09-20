@@ -1,0 +1,19 @@
+TO SEND DEMO MAIL FOR REAL (2 recipients):
+Option A - One-click (RECOMMENDED, no password):
+  open output/demo_email_combined.eml  # on macOS, opens Mail.app with To: niteshpradhan900@gmail.com, kaushikyashasvi@gmail.com pre-filled
+  # then click Send. Or open each:
+  open output/demo_email_to_niteshpradhan900@gmail.com.eml
+  open output/demo_email_to_kaushikyashasvi@gmail.com.eml
+
+Option B - Gmail SMTP (automated):
+  1. Enable 2-Step Verification on Gmail
+  2. Create App Password: myaccount.google.com → Security → App passwords → Mail → Generate 16-char code
+  3. Run:
+     export SMTP_USER=niteshpradhan900@gmail.com
+     export SMTP_PASS=your16charapppassword
+     python3 src/send_email.py --to niteshpradhan900@gmail.com --smtp
+     python3 src/send_email.py --to kaushikyashasvi@gmail.com --smtp
+     # or combined:
+     python3 -c "from pathlib import Path; import smtplib, ssl; from email.message import EmailMessage; import os; msg=EmailMessage(); msg['To']='niteshpradhan900@gmail.com, kaushikyashasvi@gmail.com'; msg['From']=os.getenv('SMTP_USER'); msg['Subject']='[Demo][Weekly Pulse] INDMoney'; msg.set_content(Path('output/demo_email_combined.txt').read_text()); import smtplib, ssl; s=smtplib.SMTP('smtp.gmail.com',587); s.starttls(context=ssl.create_default_context()); s.login(os.getenv('SMTP_USER'), os.getenv('SMTP_PASS')); s.send_message(msg); print('Sent')"
+
+All drafts already prepared in output/demo_email*.eml/.txt — no PII, INDMoney, includes NEW KYC autofetch idea, 232 words.

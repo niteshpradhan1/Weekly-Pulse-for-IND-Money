@@ -1,0 +1,38 @@
+{
+  "product": "INDMoney",
+  "product_note": "Same product as LIP Challenge 4 — INDMoney",
+  "appstore_app_id": "id1485942658",
+  "playstore_app_id": "com.indmoney",
+  "date_range_weeks": 12,
+  "themes": {
+    "onboarding": {
+      "label": "Onboarding",
+      "keywords": ["onboarding", "sign up", "signup", "otp", "create account", "registration", "welcome", "install"],
+      "description": "First-time setup, account creation, OTP, permissions"
+    },
+    "kyc": {
+      "label": "KYC / Verification",
+      "keywords": ["kyc", "verification", "pan", "aadhaar", "aadhar", "selfie", "document upload", "video kyc", "address proof", "rejected", "verify", "autofetch", "registered phone"],
+      "description": "Identity verification, document checks, video KYC — NEW: autofetch from registered phone number"
+    },
+    "payments": {
+      "label": "Payments & Transfers",
+      "keywords": ["upi", "payment", "transfer", "pay", "merchant", "autopay", "debited", "refund", "failed payment", "pending"],
+      "description": "UPI, merchant payments, transfers, refunds"
+    },
+    "statements": {
+      "label": "Statements & Portfolio",
+      "keywords": ["statement", "portfolio", "xirr", "pdf", "transactions", "breakdown", "total", "download"],
+      "description": "Statements, portfolio view, transaction history, PDFs"
+    },
+    "withdrawals": {
+      "label": "Withdrawals & Support",
+      "keywords": ["withdrawal", "withdraw", "credited", "charges", "fee", "support", "help", "credited", "limit"],
+      "description": "Money withdrawal, fees, support responsiveness"
+    }
+  },
+  "email": {
+    "to_alias": "yourself@example.com",
+    "subject_prefix": "[Weekly Pulse]"
+  }
+}

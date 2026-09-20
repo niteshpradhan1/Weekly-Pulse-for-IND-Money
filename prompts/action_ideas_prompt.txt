@@ -1,0 +1,13 @@
+Given Top 3 Themes from reviews, generate 3 action ideas.
+
+Rules:
+- Each idea must tie directly to a quoted pain or theme frequency
+- Format: <Action> — <Owner hint> — <Success metric to watch>
+- Must be shippable in 1-2 weeks or research spike
+- No generic ideas. Be specific to review evidence.
+- Cover different teams where possible (Product, Eng, Support/Ops)
+
+Example bad: "Improve UX"
+Example good: "Add KYC progress tracker with retry guidance — Product/Design — Track KYC drop-off % and support tickets"
+
+Return 3 bullets only.

@@ -1,0 +1,78 @@
+{
+  "product": "INDMoney",
+  "weeks": 12,
+  "date_range": "2026-08-05 \u2192 2026-09-18",
+  "total_reviews": 48,
+  "avg_rating": 2.88,
+  "distribution": {
+    "5": 9,
+    "2": 12,
+    "1": 10,
+    "4": 8,
+    "3": 9
+  },
+  "themes": {
+    "payments": {
+      "count": 13,
+      "avg": 3.0,
+      "neg": 6,
+      "neg_pct": 46
+    },
+    "kyc": {
+      "count": 10,
+      "avg": 2.5,
+      "neg": 6,
+      "neg_pct": 60
+    },
+    "withdrawals": {
+      "count": 9,
+      "avg": 2.89,
+      "neg": 4,
+      "neg_pct": 44
+    },
+    "statements": {
+      "count": 9,
+      "avg": 3.0,
+      "neg": 4,
+      "neg_pct": 44
+    },
+    "onboarding": {
+      "count": 7,
+      "avg": 3.0,
+      "neg": 2,
+      "neg_pct": 29
+    }
+  },
+  "top_themes": [
+    "payments",
+    "kyc",
+    "withdrawals"
+  ],
+  "quotes": [
+    {
+      "text": "App crashes every time I try to pay rent via UPI. Can't complete payment.",
+      "theme": "payments",
+      "rating": 1,
+      "date": "2026-09-09"
+    },
+    {
+      "text": "KYC verification stuck at PAN check for 3 days. Tried reinstalling.",
+      "theme": "kyc",
+      "rating": 2,
+      "date": "2026-09-17"
+    },
+    {
+      "text": "Withdrawal requested 48 hours ago still not credited. Support not replying.",
+      "theme": "withdrawals",
+      "rating": 1,
+      "date": "2026-09-16"
+    }
+  ],
+  "ideas": [
+    "Fix UPI pending/double-debit: add idempotency + live status \u2014 Eng \u2014 Track refund SLA (target <24h)",
+    "Cut KYC drop-off: autofetch PAN/Aadhaar via registered phone number + inline validation + selfie light guide \u2014 Product \u2014 Track approval %",
+    "Make withdrawals transparent: show fee + ETA + confirm account before debit \u2014 Ops \u2014 Track pending tickets"
+  ],
+  "word_count": 232,
+  "generated_at": "2026-09-20T10:14:15.174534"
+}

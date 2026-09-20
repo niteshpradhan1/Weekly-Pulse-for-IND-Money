@@ -1,0 +1,22 @@
+# Weekly Pulse — INDMoney | Week 38 (2026-08-05 → 2026-09-18)
+
+**Health:** 2.88★ avg • 48 reviews (12w) • 5★:9 4★:8 3★:9 2★:12 1★:10
+
+**Top 3 Themes (of 5):**
+1. **Payments & Transfers** — 13 reviews (46% ≤2★, 3.0★ avg) • UPI failures & double-debits still top pain; successes up after recent fix
+2. **KYC / Verification** — 10 reviews (60% ≤2★, 2.5★ avg) • Verification stuck/rejected loops; selfie + PAN upload are blockers
+3. **Withdrawals & Support** — 9 reviews (44% ≤2★, 2.89★ avg) • 48h+ pending + hidden fees erode trust; fast weekday cases praised
+
+**What Users Said:**
+> “App crashes every time I try to pay rent via UPI. Can't complete payment.” — Payments & Transfers, 1★
+
+> “KYC verification stuck at PAN check for 3 days. Tried reinstalling.” — KYC / Verification, 2★
+
+> “Withdrawal requested 48 hours ago still not credited. Support not replying.” — Withdrawals & Support, 1★
+
+**3 Action Ideas — Next 7 Days:**
+1. Fix UPI pending/double-debit: add idempotency + live status — Eng — Track refund SLA (target <24h)
+2. Cut KYC drop-off: autofetch PAN/Aadhaar via registered phone number + inline validation + selfie light guide — Product — Track approval %
+3. Make withdrawals transparent: show fee + ETA + confirm account before debit — Ops — Track pending tickets
+
+*Source: 48 public reviews (App Store + Play Store) • No PII*
