@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 .streamlit/
 output/demo_email*.eml
+node_modules/
+.next/
+out/
+.vercel/
